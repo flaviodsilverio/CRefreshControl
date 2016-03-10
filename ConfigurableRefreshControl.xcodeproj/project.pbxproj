@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1BA833591C91D993005208F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA833581C91D993005208F6 /* AppDelegate.swift */; };
-		1BA8335B1C91D993005208F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8335A1C91D993005208F6 /* ViewController.swift */; };
+		1BA8335B1C91D993005208F6 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8335A1C91D993005208F6 /* MainPage.swift */; };
 		1BA8335E1C91D993005208F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8335C1C91D993005208F6 /* Main.storyboard */; };
 		1BA833601C91D993005208F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8335F1C91D993005208F6 /* Assets.xcassets */; };
 		1BA833631C91D993005208F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA833611C91D993005208F6 /* LaunchScreen.storyboard */; };
+		1BA8336B1C91DA03005208F6 /* CRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8336A1C91DA03005208F6 /* CRefreshControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BA833551C91D993005208F6 /* ConfigurableRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfigurableRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA833581C91D993005208F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BA8335A1C91D993005208F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BA8335A1C91D993005208F6 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		1BA8335D1C91D993005208F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA8335F1C91D993005208F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA833621C91D993005208F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA833641C91D993005208F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA8336A1C91DA03005208F6 /* CRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRefreshControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		1BA833571C91D993005208F6 /* ConfigurableRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				1BA8336C1C91DA0E005208F6 /* CRefreshControl */,
 				1BA833581C91D993005208F6 /* AppDelegate.swift */,
-				1BA8335A1C91D993005208F6 /* ViewController.swift */,
+				1BA8335A1C91D993005208F6 /* MainPage.swift */,
 				1BA8335C1C91D993005208F6 /* Main.storyboard */,
 				1BA8335F1C91D993005208F6 /* Assets.xcassets */,
 				1BA833611C91D993005208F6 /* LaunchScreen.storyboard */,
 				1BA833641C91D993005208F6 /* Info.plist */,
 			);
 			path = ConfigurableRefreshControl;
+			sourceTree = "<group>";
+		};
+		1BA8336C1C91DA0E005208F6 /* CRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				1BA8336A1C91DA03005208F6 /* CRefreshControl.swift */,
+			);
+			name = CRefreshControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA8335B1C91D993005208F6 /* ViewController.swift in Sources */,
+				1BA8335B1C91D993005208F6 /* MainPage.swift in Sources */,
 				1BA833591C91D993005208F6 /* AppDelegate.swift in Sources */,
+				1BA8336B1C91DA03005208F6 /* CRefreshControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
