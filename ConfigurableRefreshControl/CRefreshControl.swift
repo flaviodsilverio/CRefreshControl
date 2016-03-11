@@ -27,16 +27,7 @@ class CRefreshControl: UIRefreshControl {
         
         super.init()
         
-        baseColor = super.backgroundColor
-        successColor = super.backgroundColor
-        failureColor = super.backgroundColor
-        
-        textColor = UIColor.blackColor()
-        successTextColor = UIColor.blackColor()
-        failureTextColor = UIColor.blackColor()
-        
-        baseText = ""
-        text = ""
+        initialization()
 
     }
 
@@ -50,6 +41,11 @@ class CRefreshControl: UIRefreshControl {
         
         super.init(coder: aDecoder)
         
+        initialization()
+    }
+    
+    func initialization(){
+    
         baseColor = super.backgroundColor
         successColor = super.backgroundColor
         failureColor = super.backgroundColor
@@ -59,6 +55,7 @@ class CRefreshControl: UIRefreshControl {
         failureTextColor = UIColor.blackColor()
         
         text = ""
+        
     }
     
     override func beginRefreshing() {
